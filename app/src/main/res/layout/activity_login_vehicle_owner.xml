@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Login.LoginVehicleOwner">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="144dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="576dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fuel_supply" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="548dp"
+        android:text="Login to Fuel Buddy"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="324dp"
+        android:layout_height="436dp"
+        android:layout_marginBottom="3dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/loginInDVNo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_drive_eta_24"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Vehicle Number"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/loginDPass"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:layout_marginTop="30dp"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/loginVOBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_yellow_box"
+            android:text="Login"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/noAcReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:elegantTextHeight="true"
+            android:gravity="center"
+            android:text="Don't have an account ? Register here"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

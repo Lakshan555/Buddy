@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Login.RegisterVehicleOwner">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="144dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="576dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fuel_supply" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="548dp"
+        android:text="Register Fuel Buddy"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="329dp"
+        android:layout_height="516dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/regVOName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/regVONicNo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_credit_card_24"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="NIC"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/regChNo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_drive_eta_24"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Chassis Number"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/regVhNo"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_drive_eta_24"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Vehicle Number"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/regVoFtype"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Fuel Type"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/regVoVehiType"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_drive_eta_24"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Vehicle Type"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/regVoPass"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000" />
+
+
+        <Button
+            android:id="@+id/regVOBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_green_button"
+            android:text="Sign Up"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

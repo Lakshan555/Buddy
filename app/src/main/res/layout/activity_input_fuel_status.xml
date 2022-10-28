@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".InputFuelStatus">
+
+    <TextView
+        android:id="@+id/Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="600dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Fuel Buddy  "
+        android:textColor="#F1E7E7"
+        android:textColorHint="#F4F2F2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="97dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="654dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Headline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/vOwner_btn"
+        android:layout_width="358dp"
+        android:layout_height="547dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_green_button"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/round_green_button" />
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="501dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="88dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="How many Liters You Want to pumped?"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/eLiters"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Enter Liters"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/exiBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_yellow_box"
+            android:text="Exit From Station"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/exiBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/round_red_box"
+            android:text="Leave without Filling"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

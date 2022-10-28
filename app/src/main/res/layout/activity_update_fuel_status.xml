@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".UpdateFuelStatus">
+
+    <TextView
+        android:id="@+id/Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="600dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Fuel Buddy  "
+        android:textColor="#F1E7E7"
+        android:textColorHint="#F4F2F2"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="97dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="654dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Headline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/vOwner_btn"
+        android:layout_width="364dp"
+        android:layout_height="520dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/round_text_view"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/round_text_view" />
+
+    <TextView
+        android:id="@+id/sName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="10dp"
+        android:text="Staion Name"
+        app:layout_constraintBottom_toTopOf="@+id/vOwner_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Headline" />
+
+    <LinearLayout
+        android:layout_width="336dp"
+        android:layout_height="501dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="88dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fuel Storage"
+            android:textColor="#E8E80F" />
+
+        <EditText
+            android:id="@+id/iDiesel"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Diesel"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000"
+            android:textSize="12dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/iSDiesel"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Super Diesel"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000"
+            android:textSize="12dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/iPetrol92"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="petrol 92"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000"
+            android:textSize="12dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/iPetrol95"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="petrol 95"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000"
+            android:textSize="12dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/atime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Fuel Arrival Time"
+            android:textColor="#E8E80F" />
+
+        <EditText
+            android:id="@+id/iADiesel"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Diesel"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/iASDiesel"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Super Diesel"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/iAPetrol92"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="petrol 92"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/iAPetrol95"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="petrol 95"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000"
+            android:textSize="12dp" />
+
+        <!--        //Arrival Stock-->
+
+        <TextView
+            android:id="@+id/aatime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Fuel Arriving Stock"
+            android:textColor="#E8E80F" />
+
+        <EditText
+            android:id="@+id/iAStockDiesel"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Diesel"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/iAStockSDiesel"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="Super Diesel"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/iAStockPetrol92"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="petrol 92"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000"
+            android:textSize="12dp" />
+
+        <EditText
+            android:id="@+id/iAStockPetrol95"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/text_box"
+            android:drawableStart="@drawable/ic_baseline_local_gas_station_24_black"
+            android:drawablePadding="5dp"
+            android:ems="10"
+            android:hint="petrol 95"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:paddingLeft="15sp"
+            android:textColorHint="#000000"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="367dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vOwner_btn">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/round_green_button"
+            android:text="Update"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
