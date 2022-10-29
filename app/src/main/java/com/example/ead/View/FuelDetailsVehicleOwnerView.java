@@ -73,9 +73,14 @@ public class FuelDetailsVehicleOwnerView extends AppCompatActivity {
     //get updated details
     private void getDetails() {
 
-        String id = "635ac78a23d441bc8ef83db2";
+//        String id = "635ac78a23d441bc8ef83db2";
+        Intent intent = getIntent();
+
+        String id = intent.getStringExtra("Station_id");
+
+        Log.e("success",id);
         queue = Volley.newRequestQueue(this);
-        String url = "https://ishankafuel.herokuapp.com/fuel_stations/"+id;
+        String url = "https://pasindu-fuelapi.herokuapp.com/fuelStations/"+id;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
@@ -87,7 +92,7 @@ public class FuelDetailsVehicleOwnerView extends AppCompatActivity {
 
 
                                 JSONObject stations = response.getJSONObject("fuelStations");
-                                JSONArray fd = stations.getJSONArray("fuel_details");
+                                JSONArray fd = stations.getJSONArray("fuelDetails");
 
                                 d = fd.getJSONObject(0).getString("quantity");
                                 sd = fd.getJSONObject(1).getString("quantity");

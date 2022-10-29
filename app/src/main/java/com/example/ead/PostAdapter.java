@@ -51,7 +51,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
             super(itemView);
 
 
-            name = itemView.findViewById(R.id.stationCardName);
+            name = itemView.findViewById(R.id.stationName);
 
 
 

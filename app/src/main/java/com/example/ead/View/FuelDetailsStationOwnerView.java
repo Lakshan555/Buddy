@@ -75,6 +75,7 @@ public class FuelDetailsStationOwnerView extends AppCompatActivity {
     private void getDetails() {
 
         String id = "635ab20ea8993ddd3ac9d9dc";
+
         queue = Volley.newRequestQueue(this);
         String url = "https://pasindu-fuelapi.herokuapp.com/fuelStations/"+id;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest

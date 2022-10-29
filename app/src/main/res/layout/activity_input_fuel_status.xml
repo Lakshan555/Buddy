@@ -77,7 +77,7 @@
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/eLiters"
+            android:id="@+id/enterLiters"
             android:layout_width="match_parent"
             android:layout_height="85dp"
             android:layout_marginTop="50dp"
@@ -91,6 +91,58 @@
             android:paddingLeft="15sp"
             android:textColorHint="#000000" />
 
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:onClick="onRadioButtonClicked"
+                android:text="Diesel"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/radio_sd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:onClick="onRadioButtonClicked"
+                android:text="Super diesel"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/radio_p92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:onClick="onRadioButtonClicked"
+                android:text="Petrol 92"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/radio_p95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFFFFF"
+                android:onClick="onRadioButtonClicked"
+                android:text="Petrol 95"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+
         <Button
             android:id="@+id/exiBtn"
             android:layout_width="match_parent"
@@ -101,7 +153,7 @@
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/exiBtn2"
+            android:id="@+id/LeaveBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"

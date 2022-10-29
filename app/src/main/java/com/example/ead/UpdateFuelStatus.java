@@ -121,7 +121,7 @@ public class UpdateFuelStatus extends AppCompatActivity {
 
                     @Override
                     public void onResponse(JSONObject response) {
-
+                        Log.e("Test",response.toString());
                         try {
                             if(response.get("isSuccessful").equals(true)){
                                 Toast.makeText(UpdateFuelStatus.this, "Updated", Toast.LENGTH_SHORT).show();

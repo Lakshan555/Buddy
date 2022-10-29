@@ -2,7 +2,9 @@ package com.example.ead.Login;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -84,6 +86,17 @@ public class LoginStationOwner extends AppCompatActivity {
                         try {
                             if(response.get("isSuccessful").equals(true)){
                                 Toast.makeText(LoginStationOwner.this, "Successfully logged in", Toast.LENGTH_SHORT).show();
+
+                                JSONObject user = response.getJSONObject("user");
+                                String id = user.getString("id");
+
+                                //store in Local
+                                SharedPreferences sharedPref = LoginStationOwner.this.getPreferences(Context.MODE_PRIVATE);
+                                SharedPreferences.Editor editor = sharedPref.edit();
+
+                                editor.putString("userId", id);
+                                editor.commit();
+
                                 Intent intent = new Intent(LoginStationOwner.this, HomeStationOwner.class);
                                 startActivity(intent);
                             }
