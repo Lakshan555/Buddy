@@ -110,7 +110,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/dSOValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -144,7 +144,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/sdSOValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -178,7 +178,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/p92SOValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -212,7 +212,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/p95SOValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -522,7 +522,7 @@
         app:layout_constraintTop_toBottomOf="@+id/vOwner_btn">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/updateStatusSOBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -531,7 +531,7 @@
             android:text="Update Status" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/closedStatusSOBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

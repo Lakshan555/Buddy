@@ -110,11 +110,11 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/dVOValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5000l"
+            android:text="Loading..."
             android:textColor="#FAF6F6"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -144,11 +144,11 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView20"
+            android:id="@+id/sdVOValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5000l"
+            android:text="Loading..."
             android:textColor="#FAF6F6"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -178,11 +178,11 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/p92VOValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5000l"
+            android:text="Loading..."
             android:textColor="#FAF6F6"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -212,11 +212,11 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView24"
+            android:id="@+id/p95VOValue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5000l"
+            android:text="Loading..."
             android:textColor="#FAF6F6"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -240,7 +240,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Remaining Fuel Storage"
+            android:text="Vehicle in Queue"
             android:textColor="#E8E80F"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -274,7 +274,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5000l"
+            android:text="20"
             android:textColor="#FAF6F6"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -308,7 +308,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5000l"
+            android:text="20"
             android:textColor="#FAF6F6"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -342,7 +342,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5000l"
+            android:text="20"
             android:textColor="#FAF6F6"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -376,7 +376,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5000l"
+            android:text="20"
             android:textColor="#FAF6F6"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -410,7 +410,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5000l"
+            android:text="20"
             android:textColor="#FAF6F6"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -434,7 +434,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Remaining Fuel Storage"
+            android:text="Fuel Arrival tome"
             android:textColor="#E8E80F"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -469,7 +469,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="14/10/2022 12.50 P.M"
+            android:text="30/10/2022 12.50 P.M"
             android:textColor="#FAF6F6"
             android:textSize="16sp"
             android:textStyle="bold" />
@@ -522,16 +522,16 @@
         app:layout_constraintTop_toBottomOf="@+id/vOwner_btn">
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/vOArrivedBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="@color/black"
-            android:background="@drawable/round_green_button"
+            android:background="@drawable/round_yellow_box"
             android:text="Arrived" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/vODpepaBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
