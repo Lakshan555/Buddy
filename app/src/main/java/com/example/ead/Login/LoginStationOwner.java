@@ -89,15 +89,8 @@ public class LoginStationOwner extends AppCompatActivity {
 
                                 JSONObject user = response.getJSONObject("user");
                                 String id = user.getString("id");
-
-                                //store in Local
-                                SharedPreferences sharedPref = LoginStationOwner.this.getPreferences(Context.MODE_PRIVATE);
-                                SharedPreferences.Editor editor = sharedPref.edit();
-
-                                editor.putString("userId", id);
-                                editor.commit();
-
                                 Intent intent = new Intent(LoginStationOwner.this, HomeStationOwner.class);
+                                intent.putExtra("sid", id);
                                 startActivity(intent);
                             }
                             else{

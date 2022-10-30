@@ -29,6 +29,7 @@ public class FuelDetailsStationOwnerView extends AppCompatActivity {
     private Button updateStatusSOBtn,closedStatusSOBtn;
     private RequestQueue queue;
     private String  d,sd,p92,p95;
+    String stid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +56,7 @@ public class FuelDetailsStationOwnerView extends AppCompatActivity {
                 intent.putExtra("sd", sd);
                 intent.putExtra("p92", p92);
                 intent.putExtra("p95", p95);
-
+                intent.putExtra("sid", stid);
                 startActivity(intent);
 
 
@@ -74,22 +75,34 @@ public class FuelDetailsStationOwnerView extends AppCompatActivity {
     //get updated details
     private void getDetails() {
 
-        String id = "635ab20ea8993ddd3ac9d9dc";
+        Intent intent = getIntent();
+
+        String sid = intent.getStringExtra("sid");
+
+        Log.e("testis",sid);
 
         queue = Volley.newRequestQueue(this);
-        String url = "https://pasindu-fuelapi.herokuapp.com/fuelStations/"+id;
+        String url = "https://pasindu-fuelapi.herokuapp.com/fuelStations/owner/"+sid;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
                 (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
                     @Override
                     public void onResponse(JSONObject response) {
-
+                        Log.e("getdata", response.toString());
                         try {
                             if (response.get("isSuccessful").equals(true)) {
 
 
-                                JSONObject stations = response.getJSONObject("fuelStations");
-                                JSONArray fd = stations.getJSONArray("fuelDetails");
+//                                JSONObject stations = response.getJSONObject("fuelStations");
+//                                JSONArray fd = stations.getJSONArray("fuelDetails");
+                                JSONArray stations = response.getJSONArray("fuelStation");
+                                JSONObject ft = stations.getJSONObject(0);
+                                JSONArray fd = ft.getJSONArray("fuelDetails");
+
+                                Log.e("GetUpdate", stations.toString());
+
+
+                                stid = ft.getString("_id");
 
                                 d = fd.getJSONObject(0).getString("quantity");
                                 sd = fd.getJSONObject(1).getString("quantity");

@@ -33,6 +33,7 @@ public class UpdateFuelStatus extends AppCompatActivity {
 
     private Button FABtn;
     private RequestQueue queue;
+    String sid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,9 @@ public class UpdateFuelStatus extends AppCompatActivity {
         String sd = intent.getStringExtra("sd");
         String p92 = intent.getStringExtra("p92");
         String p95 = intent.getStringExtra("p95");
+        sid = intent.getStringExtra("sid");
+
+
 
         //set values to input field
         iDiesel.setText(d);
@@ -81,7 +85,7 @@ public class UpdateFuelStatus extends AppCompatActivity {
     private void UpdateFuelS() throws JSONException {
 
         HashMap<String,String> params = new HashMap<String,String>();
-        String id = "635ab20ea8993ddd3ac9d9dc";
+//        String id = "635ab20ea8993ddd3ac9d9dc";
 
 
 
@@ -115,13 +119,13 @@ public class UpdateFuelStatus extends AppCompatActivity {
 
 
         queue = Volley.newRequestQueue(this);
-        String url = "https://pasindu-fuelapi.herokuapp.com/fuelStations/"+id;
+        String url = "https://pasindu-fuelapi.herokuapp.com/fuelStations/"+sid;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
                 (Request.Method.PUT, url, new JSONObject(params), new Response.Listener<JSONObject>() {
 
                     @Override
                     public void onResponse(JSONObject response) {
-                        Log.e("Test",response.toString());
+
                         try {
                             if(response.get("isSuccessful").equals(true)){
                                 Toast.makeText(UpdateFuelStatus.this, "Updated", Toast.LENGTH_SHORT).show();

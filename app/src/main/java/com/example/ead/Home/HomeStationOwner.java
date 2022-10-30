@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -23,7 +24,14 @@ public class HomeStationOwner extends AppCompatActivity {
         stationBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Intent intent1 = getIntent();
+
+                String sid = intent1.getStringExtra("sid");
+
                 Intent intent = new Intent(HomeStationOwner.this, FuelDetailsStationOwnerView.class);
+                intent.putExtra("sid", sid);
+                Log.e("testis",sid);
                 startActivity(intent);
             }
         });
